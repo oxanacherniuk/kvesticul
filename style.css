@@ -212,6 +212,7 @@ button {
     display: block;
     margin: 0 auto;
     font-size: 16px;
+    color: #1e1e1e;
     margin-top: 20px;
     box-shadow: inset 0px 2px 4px 0px #FFFFFF;
     transition: all 0.3s ease;
@@ -649,7 +650,7 @@ button {
 }
 
 .footer-mobile__nav img {
-    width: 50px;
+    width: 40px;
 }
 
 .footer-mobile__nav p {
