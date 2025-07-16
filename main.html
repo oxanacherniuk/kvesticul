@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>КВЕСТИКУЛ - онлайн-викторина</title>
 </head>
 <body>
@@ -48,7 +49,26 @@
         </div>
     </div>
 
+    <div class="header-mobile">
+        <div class="container2">
+            <div class="mobile-header row">
+                <button class="notifications">
+                    <img src="img/notification_icon.png" alt="">
+                </button>
+                <img src="img/logo-kvesticul.png" alt="" class="logo-mobile">
+                <div class="mobile-header__rating row" style="align-items: center;">
+                    <img src="img/star_icon2.png" alt="" class="rating-img">
+                    <img src="img/boy_icon.png" alt="" class="user-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="banner">
+        <div class="banner-billet">
+            <p>онлайн викторина</p>
+        </div>
+        <div class="banner-rating"><img src="img/five-rating_icon.png" alt=""></div>
         <div class="container">
             <div class="banner-box">
                 <p class="banner-box__text">Викторина</p>
@@ -66,100 +86,141 @@
                 <img src="img/calendar_icon.svg" alt="" class="calendar-icon">
             </div>
         </div>
-        <div class="container2 row">
-            <div class="billboard-box">
-                <div class="billboard-box__left">
-                    <div class="photo-box">
-                        <img src="img/current-poster.jpg" alt="" sizes="" srcset="">
-                        <p class="photo-box__date">24<br>04</p>
-                        <p class="photo-box__title">городские легенды</p>
+        <div class="container2">
+            <div class="billboard-inner">
+                <div class="billboard-box">
+                    <div class="billboard-box__left">
+                        <div class="photo-box">
+                            <img src="img/current-poster.jpg" alt="" sizes="" srcset="">
+                            <p class="photo-box__date">24<br>04</p>
+                            <p class="photo-box__title">городские легенды</p>
+                        </div>
+                    </div>
+                    <div class="billboard-box__right">
+                        <div class="card-date">
+                            <div class="card-date--1 row">
+                                <img src="img/calendar-mini_icon.svg" alt="">
+                                <p class="card-text">24 апреля 22</p>
+                            </div>
+                            <div class="card-date--2 row">
+                                <img src="img/location_icon.svg" alt="">
+                                <p class="card-text">Встреча у дома техники</p>
+                            </div>
+                            <div class="card-date--3 row">
+                                <img src="img/time_icon.svg" alt="">
+                                <p class="card-text">12:00-15:00</p>
+                            </div>
+                        </div>
+                        <p class="tagging-text">Квест прогулка</p>
+                        <p class="card-title">Городские легенды</p>
+                        <p class="card-description">Во время экскурсии вы узнаете о привидениях которые появляются в городе, о святых,
+                            которые жили в городе и какие чудеса
+                            были с этим связаны, и другие интересные городские легенды...</p>
+                        <a class="card-link" href="">Подробнее</a>
                     </div>
                 </div>
-                <div class="billboard-box__right">
-                    <div class="card-date">
-                        <div class="card-date--1 row">
-                            <img src="img/calendar-mini_icon.svg" alt="">
-                            <p class="card-text">24 апреля 22</p>
-                        </div>
-                        <div class="card-date--2 row">
-                            <img src="img/location_icon.svg" alt="">
-                            <p class="card-text">Встреча у дома техники</p>
-                        </div>
-                        <div class="card-date--3 row">
-                            <img src="img/time_icon.svg" alt="">
-                            <p class="card-text">12:00-15:00</p>
+                <div class="mini-cards">
+                    <div class="mini-card row">
+                        <img src="img/poster1.jpg" alt="">
+                        <div class="mini-card__info">
+                            <div class="mini-card__links row">
+                                <div class="card-date--1 row" style="margin-right: 8px;">
+                                    <img src="img/calendar-mini_icon.svg" alt="">
+                                    <p class="card-text">24.04.22</p>
+                                </div>
+                                <div class="card-date--2 row">
+                                    <img src="img/time_icon.svg" alt="">
+                                    <p class="card-text">12:00-15:00</p>
+                                </div>
+                            </div>
+                            <p class="mini-card__title">Квест о семье Ульяновых</p>
                         </div>
                     </div>
-                    <p class="tagging-text">Квест прогулка</p>
-                    <p class="card-title">Городские легенды</p>
-                    <p class="card-description">Во время экскурсии вы узнаете о привидениях которые появляются в городе, о святых, которые жили в городе и какие чудеса
-                    были с этим связаны, и другие интересные городские легенды...</p>
-                    <a class="card-link" href="">Подробнее</a>
+                    <div class="mini-card row">
+                        <img src="img/poster2.jpg" alt="">
+                        <div class="mini-card__info">
+                            <div class="mini-card__links row">
+                                <div class="card-date--1 row" style="margin-right: 8px;">
+                                    <img src="img/calendar-mini_icon.svg" alt="">
+                                    <p class="card-text">24.04.22</p>
+                                </div>
+                                <div class="card-date--2 row">
+                                    <img src="img/time_icon.svg" alt="">
+                                    <p class="card-text">12:00-15:00</p>
+                                </div>
+                            </div>
+                            <p class="mini-card__title">Квест по роману Обломов</p>
+                        </div>
+                    </div>
+                    <div class="mini-card row">
+                        <img src="img/poster3.jpg" alt="">
+                        <div class="mini-card__info">
+                            <div class="mini-card__links row">
+                                <div class="card-date--1 row" style="margin-right: 8px;">
+                                    <img src="img/calendar-mini_icon.svg" alt="">
+                                    <p class="card-text">24.04.22</p>
+                                </div>
+                                <div class="card-date--2 row">
+                                    <img src="img/time_icon.svg" alt="">
+                                    <p class="card-text">12:00-15:00</p>
+                                </div>
+                            </div>
+                            <p class="mini-card__title">Первым делом самолеты</p>
+                        </div>
+                    </div>
+                    <div class="mini-card row">
+                        <img src="img/poster4.jpg" alt="">
+                        <div class="mini-card__info">
+                            <div class="mini-card__links row">
+                                <div class="card-date--1 row" style="margin-right: 8px;">
+                                    <img src="img/calendar-mini_icon.svg" alt="">
+                                    <p class="card-text">24.04.22</p>
+                                </div>
+                                <div class="card-date--2 row">
+                                    <img src="img/time_icon.svg" alt="">
+                                    <p class="card-text">12:00-15:00</p>
+                                </div>
+                            </div>
+                            <p class="mini-card__title">Городские легенды</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="mini-cards">
-                <div class="mini-card row">
-                    <img src="img/poster1.jpg" alt="">
-                    <div class="mini-card__info">
-                        <div class="mini-card__links row">
-                            <div class="card-date--1 row" style="margin-right: 8px;">
-                                <img src="img/calendar-mini_icon.svg" alt="">
-                                <p class="card-text">24.04.22</p>
-                            </div>
-                            <div class="card-date--2 row">
-                                <img src="img/time_icon.svg" alt="">
-                                <p class="card-text">12:00-15:00</p>
-                            </div>
+            <div class="billboard-mobile">
+                <div class="billboard-mobile__box--1 row" style="margin-top: 20px; margin-bottom: 20px; justify-content: center;">
+                    <div class="billboard-mobile__box" style="margin-right: 20px;">
+                        <img src="img/billboard1.png" alt="">
+                        <img src="img/five-rating_icon.png" alt="" class="billboard-rating">
+                        <div class="billboard-billet" style="background-color: #42D274;">
+                            <p>квест в реале</p>
                         </div>
-                        <p class="mini-card__title">Квест о семье Ульяновых</p>
+                        <p class="billboard-mobile__box__title">городские легенды</p>
+                    </div>
+                    <div class="billboard-mobile__box">
+                        <img src="img/billboard2.png" alt="">
+                        <img src="img/ten-rating_icon.png" alt="" class="billboard-rating">
+                        <div class="billboard-billet" style="background-color: #ECDD51;">
+                            <p>опрос</p>
+                        </div>
+                        <p class="billboard-mobile__box__title">дом ленина</p>
                     </div>
                 </div>
-                <div class="mini-card row">
-                    <img src="img/poster2.jpg" alt="">
-                    <div class="mini-card__info">
-                        <div class="mini-card__links row">
-                            <div class="card-date--1 row" style="margin-right: 8px;">
-                                <img src="img/calendar-mini_icon.svg" alt="">
-                                <p class="card-text">24.04.22</p>
-                            </div>
-                            <div class="card-date--2 row">
-                                <img src="img/time_icon.svg" alt="">
-                                <p class="card-text">12:00-15:00</p>
-                            </div>
+                <div class="billboard-mobile__box--2 row" style="justify-content: center;">
+                    <div class="billboard-mobile__box" style="margin-right: 20px;">
+                        <img src="img/billboard3.png" alt="">
+                        <img src="img/ten-rating_icon.png" alt="" class="billboard-rating">
+                        <div class="billboard-billet" style="background-color: #53E6FF;">
+                            <p>викторина</p>
                         </div>
-                        <p class="mini-card__title">Квест по роману Обломов</p>
+                        <p class="billboard-mobile__box__title">детство</p>
                     </div>
-                </div>
-                <div class="mini-card row">
-                    <img src="img/poster3.jpg" alt="">
-                    <div class="mini-card__info">
-                        <div class="mini-card__links row">
-                            <div class="card-date--1 row" style="margin-right: 8px;">
-                                <img src="img/calendar-mini_icon.svg" alt="">
-                                <p class="card-text">24.04.22</p>
-                            </div>
-                            <div class="card-date--2 row">
-                                <img src="img/time_icon.svg" alt="">
-                                <p class="card-text">12:00-15:00</p>
-                            </div>
+                    <div class="billboard-mobile__box">
+                        <img src="img/billboard4.png" alt="">
+                        <img src="img/ten-rating_icon.png" alt="" class="billboard-rating">
+                        <div class="billboard-billet" style="background-color: #E89CFF;">
+                            <p>конкурс</p>
                         </div>
-                        <p class="mini-card__title">Первым делом самолеты</p>
-                    </div>
-                </div>
-                <div class="mini-card row">
-                    <img src="img/poster4.jpg" alt="">
-                    <div class="mini-card__info">
-                        <div class="mini-card__links row">
-                            <div class="card-date--1 row" style="margin-right: 8px;">
-                                <img src="img/calendar-mini_icon.svg" alt="">
-                                <p class="card-text">24.04.22</p>
-                            </div>
-                            <div class="card-date--2 row">
-                                <img src="img/time_icon.svg" alt="">
-                                <p class="card-text">12:00-15:00</p>
-                            </div>
-                        </div>
-                        <p class="mini-card__title">Городские легенды</p>
+                        <p class="billboard-mobile__box__title">первым делом самолеты</p>
                     </div>
                 </div>
             </div>
@@ -224,72 +285,74 @@
                 <img src="img/waves-mini_icon.png" alt="" class="waves-icon">
                 <h2 class="billboard-title title">популярные квест-площадки</h2>
             </div>
-            <div class="sites-box">
-                <div class="site-card">
-                    <img src="img/quest1.jpg" alt="">
-                    <div class="sites-card__info">
-                        <p class="sites-card__title">Дом-музей Ленина</p>
-                        <p class="sites-card__text">Расположен в доме, которым владела в Симбирске семья Ульяновых в 1878-1887 гг. Здесь жил и трудился просветитель...</p>
-                        <p class="sites-card__subtitle">Активные квесты</p>
-                        <div class="sites-footer">
-                            <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
-                                <img src="img/location_icon.svg" alt="">
-                                <p class="card-text">Ленина, 68</p>
-                            </div>
-                            <div class="card-date--2 row">
-                                <img src="img/time_icon.svg" alt="">
-                                <p class="card-text">10 — 18, Ежедневно</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="site-card">
-                    <img src="img/quest2.jpg" alt="">
-                    <div class="sites-card__info">
-                        <p class="sites-card__title">Набережная Аквамолла</p>
-                        <p class="sites-card__text">Модная и современная прогулочная зона на берегу реки Свияги</p>
-                        <p class="sites-card__subtitle">Активные квесты</p>
-                        <div class="sites-footer">
-                            <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
-                                <img src="img/location_icon.svg" alt="">
-                                <p class="card-text">Московское ш., 108</p>
-                            </div>
-                            <div class="card-date--2 row">
-                                <img src="img/time_icon.svg" alt="">
-                                <p class="card-text">10 — 18, Ежедневно</p>
+            <div class="sites-carousel">
+                <div class="sites-box">
+                    <div class="site-card">
+                        <img src="img/quest1.jpg" alt="">
+                        <div class="sites-card__info">
+                            <p class="sites-card__title">Дом-музей Ленина</p>
+                            <p class="sites-card__text">Расположен в доме, которым владела в Симбирске семья Ульяновых в 1878-1887 гг. Здесь жил и трудился просветитель...</p>
+                            <p class="sites-card__subtitle">Активные квесты</p>
+                            <div class="sites-footer">
+                                <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
+                                    <img src="img/location_icon.svg" alt="">
+                                    <p class="card-text">Ленина, 68</p>
+                                </div>
+                                <div class="card-date--2 row">
+                                    <img src="img/time_icon.svg" alt="">
+                                    <p class="card-text">10 — 18, Ежедневно</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="site-card">
-                    <img src="img/quest3.jpg" alt="">
-                    <div class="sites-card__info">
-                        <p class="sites-card__title">Музей гражданской авиации</p>
-                        <p class="sites-card__text">Не имеющий аналогов комплекс под открытым небом, где можно увидеть легендарные пассажирские и невоенные воздушные
-                        суда...</p>
-                        <p class="sites-card__subtitle">Активные квесты</p>
-                        <div class="sites-footer">
-                            <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
-                                <img src="img/location_icon.svg" alt="">
-                                <p class="card-text">Авиационная, 20а</p>
-                            </div>
-                            <div class="card-date--2 row">
-                                <img src="img/time_icon.svg" alt="">
-                                <p class="card-text">Вт-пт 10—17, сб-вс 10 — 16, пн — выходной</p>
+                    <div class="site-card">
+                        <img src="img/quest2.jpg" alt="">
+                        <div class="sites-card__info">
+                            <p class="sites-card__title">Набережная Аквамолла</p>
+                            <p class="sites-card__text">Модная и современная прогулочная зона на берегу реки Свияги</p>
+                            <p class="sites-card__subtitle">Активные квесты</p>
+                            <div class="sites-footer">
+                                <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
+                                    <img src="img/location_icon.svg" alt="">
+                                    <p class="card-text">Московское ш., 108</p>
+                                </div>
+                                <div class="card-date--2 row">
+                                    <img src="img/time_icon.svg" alt="">
+                                    <p class="card-text">10 — 18, Ежедневно</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="site-card">
-                    <img src="img/quest4.jpg" alt="">
-                    <div class="sites-card__info">
-                        <p class="sites-card__title">Пальцинский остров</p>
-                        <p class="sites-card__text">Остров на Куйбышевском водохранилище вблизи Ульяновска, удалён от левого берега Волги на расстояние около 3 км...</p>
-                        <p class="sites-card__subtitle">Активные квесты</p>
-                        <div class="sites-footer">
-                            <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center; margin-bottom: 25px;">
-                                <img src="img/location_icon.svg" alt="">
-                                <p class="card-text">10 км от Речного порта</p>
+                    <div class="site-card">
+                        <img src="img/quest3.jpg" alt="">
+                        <div class="sites-card__info">
+                            <p class="sites-card__title">Музей гражданской авиации</p>
+                            <p class="sites-card__text">Не имеющий аналогов комплекс под открытым небом, где можно увидеть легендарные пассажирские и невоенные воздушные
+                            суда...</p>
+                            <p class="sites-card__subtitle">Активные квесты</p>
+                            <div class="sites-footer">
+                                <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
+                                    <img src="img/location_icon.svg" alt="">
+                                    <p class="card-text">Авиационная, 20а</p>
+                                </div>
+                                <div class="card-date--2 row">
+                                    <img src="img/time_icon.svg" alt="">
+                                    <p class="card-text">Вт-пт 10—17, сб-вс 10 — 16, пн — выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-card">
+                        <img src="img/quest4.jpg" alt="">
+                        <div class="sites-card__info">
+                            <p class="sites-card__title">Пальцинский остров</p>
+                            <p class="sites-card__text">Остров на Куйбышевском водохранилище вблизи Ульяновска, удалён от левого берега Волги на расстояние около 3 км...</p>
+                            <p class="sites-card__subtitle">Активные квесты</p>
+                            <div class="sites-footer">
+                                <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center; margin-bottom: 25px;">
+                                    <img src="img/location_icon.svg" alt="">
+                                    <p class="card-text">10 км от Речного порта</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,6 +421,33 @@
             </div>
         </div>
     </footer>
+
+    <div class="footer-mobile">
+        <div class="container2">
+            <div class="footer-mobile__navs row">
+                <a href="" class="footer-mobile__nav">
+                    <img src="img/poster_icon.png" alt="">
+                    <p>Афиша</p>
+                </a>
+                <a href="" class="footer-mobile__nav">
+                    <img src="img/gift_icon.png" alt="">
+                    <p>Квесты</p>
+                </a>
+                <a href="" class="footer-mobile__nav">
+                    <img src="img/star_icon.png" alt="">
+                    <p>Рейтинг</p>
+                </a>
+                <a href="" class="footer-mobile__nav">
+                    <img src="img/maze_icon.png" alt="">
+                    <p>Призы</p>
+                </a>
+                <a href="" class="footer-mobile__nav">
+                    <img src="img/pin_icon.png" alt="">
+                    <p>Места</p>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {

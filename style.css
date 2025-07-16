@@ -144,6 +144,33 @@ button {
     font-weight: 500;
 }
 
+.header-mobile {
+    display: none;
+    background-color: #F9F8FF;
+    padding: 10px 0;
+}
+
+.mobile-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications img, .user-icon {
+    width: 40px;
+    display: block;
+}
+
+.logo-mobile{
+    height: 50px;
+    display: block;
+}
+
+.rating-img {
+    height: 30px;
+    display: block;
+    margin-right: 12px;
+}
+
 /* banner */
 .banner {
     background-image: url(img/banner_background.png);
@@ -200,13 +227,43 @@ button {
 }
 
 .banner {
+    position: relative;
     animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.banner-billet {
+    display: none;
+    background-color: #E89DFF;
+    padding: 10px 15px;
+    max-width: 200px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    font-size: 14px;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+}
+
+.banner-rating {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    display: none;
+}
+
+.banner-rating img {
+    max-width: 50px;
 }
 
 /* billboard */
 
 .billboard {
     margin-top: 55px;
+}
+
+.billboard-mobile {
+    display: none;
 }
 
 .title-block {
@@ -265,6 +322,10 @@ button {
 
 .billboard-box__right {
     background-color: #EAF4FE;
+}
+
+.billboard-inner {
+    display: flex;
 }
 
 .card-date {
@@ -351,6 +412,41 @@ button {
     margin-bottom: 60px;
 }
 
+.billboard-mobile__box {
+    position: relative;
+}
+
+.billboard-billet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    padding: 5px 10px;
+}
+
+.billboard-billet p {
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+.billboard-rating {
+    width: 25px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.billboard-mobile__box__title {
+    position: absolute;
+    left: 4px;
+    bottom: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    max-width: 90px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 /* quests */
 
 .quests-box {
@@ -401,6 +497,8 @@ button {
     cursor: pointer;
     position: relative;
     transition: 0.3s;
+    flex: 0 0 auto; 
+    width: 309px;
 }
 
 .site-card:hover {
@@ -530,4 +628,34 @@ button {
 
 .footer-nav__link a {
     color: #F8F8FE;
+}
+
+.footer-mobile {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #e0e0e0; /* Серая граница 1px */
+    z-index: 1000; /* Убедитесь, что футер поверх других элементов */
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
+
+.footer-mobile__navs {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-mobile__nav img {
+    width: 50px;
+}
+
+.footer-mobile__nav p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1e1e1e;
+    margin-top: 4px;
+    text-align: center;
 }
