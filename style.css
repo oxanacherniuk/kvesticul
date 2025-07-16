@@ -25,6 +25,10 @@ button {
     font-family: "Inter", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .row {
     display: flex;
 }
@@ -63,6 +67,7 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 /* header */
@@ -182,7 +187,20 @@ button {
     font-size: 16px;
     margin-top: 20px;
     box-shadow: inset 0px 2px 4px 0px #FFFFFF;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    animation: pulse 2.5s ease-in-out infinite;
     background: linear-gradient(181deg, rgba(243, 217, 144, 1) 0%, rgba(233, 188, 59, 1) 100%);
+    animation: gradientShift 2s ease infinite;
+    animation: shadowShift 2s ease infinite;
+}
+
+.banner-box__button:hover {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.banner {
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 /* billboard */
@@ -365,6 +383,78 @@ button {
     font-weight: 400;
     font-size: 18px;
     left: 100px;
+}
+
+/* sites */
+
+.sites {
+    margin: 60px 0;
+}
+
+.sites-box {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.site-card {
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.site-card:hover {
+    box-shadow: 0px 2px 4px 0px #86ccf5;
+}
+
+.sites-card__info {
+    background-color: #EAF4FE;
+    max-width: 309px;
+    height: 215px;
+}
+
+.sites-card__title {
+    font-size: 18px;
+    color: #0178C0;
+    margin-left: 15px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.sites-card__text {
+    font-size: 13px;
+    color: #1e1e1e;
+    margin-left: 15px;
+    font-weight: 500;
+    padding-top: 5px;
+    max-width: 270px;
+}
+
+.sites-card__subtitle {
+    position: absolute;
+    bottom: 80px;
+    left: 15px;
+    font-size: 15px;
+    color: #0178C0;
+    font-weight: 500;
+}
+
+.sites-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+
+.dowlods-button {
+    color: #0985CF;
+    border: 1.5px solid #0985CF;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 /* partners */

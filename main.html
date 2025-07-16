@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="animation.css">
+    <title>КВЕСТИКУЛ - онлайн-викторина</title>
 </head>
 <body>
     <div class="header">
@@ -216,6 +217,87 @@
             </div>
         </div>
     </div>
+
+    <div class="sites">
+        <div class="container2">
+            <div class="title-block row">
+                <img src="img/waves-mini_icon.png" alt="" class="waves-icon">
+                <h2 class="billboard-title title">популярные квест-площадки</h2>
+            </div>
+            <div class="sites-box">
+                <div class="site-card">
+                    <img src="img/quest1.jpg" alt="">
+                    <div class="sites-card__info">
+                        <p class="sites-card__title">Дом-музей Ленина</p>
+                        <p class="sites-card__text">Расположен в доме, которым владела в Симбирске семья Ульяновых в 1878-1887 гг. Здесь жил и трудился просветитель...</p>
+                        <p class="sites-card__subtitle">Активные квесты</p>
+                        <div class="sites-footer">
+                            <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
+                                <img src="img/location_icon.svg" alt="">
+                                <p class="card-text">Ленина, 68</p>
+                            </div>
+                            <div class="card-date--2 row">
+                                <img src="img/time_icon.svg" alt="">
+                                <p class="card-text">10 — 18, Ежедневно</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-card">
+                    <img src="img/quest2.jpg" alt="">
+                    <div class="sites-card__info">
+                        <p class="sites-card__title">Набережная Аквамолла</p>
+                        <p class="sites-card__text">Модная и современная прогулочная зона на берегу реки Свияги</p>
+                        <p class="sites-card__subtitle">Активные квесты</p>
+                        <div class="sites-footer">
+                            <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
+                                <img src="img/location_icon.svg" alt="">
+                                <p class="card-text">Московское ш., 108</p>
+                            </div>
+                            <div class="card-date--2 row">
+                                <img src="img/time_icon.svg" alt="">
+                                <p class="card-text">10 — 18, Ежедневно</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-card">
+                    <img src="img/quest3.jpg" alt="">
+                    <div class="sites-card__info">
+                        <p class="sites-card__title">Музей гражданской авиации</p>
+                        <p class="sites-card__text">Не имеющий аналогов комплекс под открытым небом, где можно увидеть легендарные пассажирские и невоенные воздушные
+                        суда...</p>
+                        <p class="sites-card__subtitle">Активные квесты</p>
+                        <div class="sites-footer">
+                            <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center;">
+                                <img src="img/location_icon.svg" alt="">
+                                <p class="card-text">Авиационная, 20а</p>
+                            </div>
+                            <div class="card-date--2 row">
+                                <img src="img/time_icon.svg" alt="">
+                                <p class="card-text">Вт-пт 10—17, сб-вс 10 — 16, пн — выходной</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-card">
+                    <img src="img/quest4.jpg" alt="">
+                    <div class="sites-card__info">
+                        <p class="sites-card__title">Пальцинский остров</p>
+                        <p class="sites-card__text">Остров на Куйбышевском водохранилище вблизи Ульяновска, удалён от левого берега Волги на расстояние около 3 км...</p>
+                        <p class="sites-card__subtitle">Активные квесты</p>
+                        <div class="sites-footer">
+                            <div class="card-date--1 row" style="margin-bottom: 10px; align-items: center; margin-bottom: 25px;">
+                                <img src="img/location_icon.svg" alt="">
+                                <p class="card-text">10 км от Речного порта</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="dowlods-button d-block">Загрузить еще</button>
+        </div>
+    </div>
     
     <div class="partners">
         <div class="container2">
@@ -277,5 +359,58 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function checkVisibility(element, callback) {
+                const rect = element.getBoundingClientRect();
+                const isVisible = (rect.top <= window.innerHeight * 0.75) &&
+                    (rect.bottom >= window.innerHeight * 0.25);
+
+                if (isVisible) {
+                    callback();
+                    return true;
+                }
+                return false;
+            }
+
+            const billboard = document.querySelector('.billboard');
+            if (billboard) {
+                const isAlreadyVisible = checkVisibility(billboard, function () {
+                    billboard.classList.add('visible');
+                });
+
+                if (!isAlreadyVisible) {
+                    const billboardScrollHandler = function () {
+                        if (checkVisibility(billboard, function () {
+                            billboard.classList.add('visible');
+                            window.removeEventListener('scroll', billboardScrollHandler);
+                        })) {
+                            window.removeEventListener('scroll', billboardScrollHandler);
+                        }
+                    };
+                    window.addEventListener('scroll', billboardScrollHandler);
+                }
+            }
+
+            const questsBlock = document.querySelector('.quests');
+            if (questsBlock) {
+                const isAlreadyVisible = checkVisibility(questsBlock, function () {
+                    questsBlock.classList.add('visible');
+                });
+
+                if (!isAlreadyVisible) {
+                    const questsScrollHandler = function () {
+                        if (checkVisibility(questsBlock, function () {
+                            questsBlock.classList.add('visible');
+                            window.removeEventListener('scroll', questsScrollHandler);
+                        })) {
+                            window.removeEventListener('scroll', questsScrollHandler);
+                        }
+                    };
+                    window.addEventListener('scroll', questsScrollHandler);
+                }
+            }
+        });
+    </script>
 </body>
 </html>
