@@ -650,11 +650,13 @@ button {
 }
 
 .footer-mobile__nav img {
-    width: 40px;
+    width: 35px;
+    display: block;
+    margin: auto;
 }
 
 .footer-mobile__nav p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     color: #1e1e1e;
     margin-top: 4px;
